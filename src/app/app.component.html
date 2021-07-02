@@ -1,0 +1,60 @@
+<div class="home">
+    <div class="container-fluid display-table">
+        <div class="row display-table-row">
+            <div class="col-md-2 col-sm-1 hidden-xs display-table-cell v-align box" id="navigation">
+                <div class="logo">
+                    <a><img src="https://media.istockphoto.com/vectors/user-avatar-profile-icon-black-vector-illustration-vector-id1209654046?k=6&m=1209654046&s=612x612&w=0&h=sNiHvwJm5SPrpTCjz-7eqSDqew5-f2hASM2FrGLtMJ4="
+                            alt="merkery_logo" class="hidden-xs hidden-sm">
+
+                    </a>
+                    <div>
+                        <span style="color: #ffffff;margin: 10px,0px;">
+                            Akshay K N
+
+                        </span>
+                    </div>
+                </div>
+
+                <div class="navi" style="margin-top: 10px;">
+                    <ul>
+                        <li routerLink="/scatter" [routerLinkActive]="['active']">
+                            <a><i class="fa fa-home" aria-hidden="true"></i><span
+                                    class="hidden-xs hidden-sm">Scatter</span></a>
+                        </li>
+                        <li routerLink="/bubble" [routerLinkActive]="['active']"><a><i class="fa fa-area-chart"
+                                    aria-hidden="true"></i><span class="hidden-xs hidden-sm">Bubble chart</span></a>
+                        </li>
+                        <li routerLink="/line" [routerLinkActive]="['active']"><a><i class="fa fa-line-chart"
+                                    aria-hidden="true"></i><span class="hidden-xs hidden-sm">Line</span></a></li>
+                        <li routerLink="/bar" [routerLinkActive]="['active']"><a><i class="fa fa-bar-chart"
+                                    aria-hidden="true"></i><span class="hidden-xs hidden-sm">Bar</span></a></li>
+                        <li routerLink="/area" [routerLinkActive]="['active']"><a><i class="fa fa-area-chart"
+                                    aria-hidden="true"></i><span class="hidden-xs hidden-sm">Area</span></a></li>
+                        <li routerLink="/pie" [routerLinkActive]="['active']"><a><i class="fa fa-pie-chart"
+                                    aria-hidden="true"></i><span class="hidden-xs hidden-sm">Pie</span></a></li>
+                        <li routerLink="/hostogram" [routerLinkActive]="['active']"><a><i class="fa fa-pie-chart"
+                                    aria-hidden="true"></i><span class="hidden-xs hidden-sm">Histogram</span></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-10 col-sm-11 display-table-cell v-align">
+                <div class="row">
+                    <header>
+                        <form class="d-flex" style="float: right;">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">Search</button>
+                        </form>
+                    </header>
+                </div>
+                <div class="user-dashboard">
+                    <router-outlet></router-outlet>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+</div>
