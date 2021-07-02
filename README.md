@@ -1,1 +1,1 @@
-# angular-plotly
+# angular-plotly.js
